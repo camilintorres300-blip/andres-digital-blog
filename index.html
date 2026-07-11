@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog Digital de Andrés</title>
+<title>Andrés Digital</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -26,81 +25,93 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#0d1117,#1f2937);
-animation:fondo 8s infinite alternate;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0d1117,#1f2937,#2563eb);
+background-size:400% 400%;
+animation:fondo 10s infinite alternate;
 }
 
 @keyframes fondo{
-0%{background:#0d1117;}
-100%{background:#111827;}
+0%{background-position:left;}
+100%{background-position:right;}
 }
 
 h1{
-font-size:60px;
-animation:aparecer 2s;
+font-size:65px;
+margin-bottom:20px;
 }
 
-p{
-margin-top:20px;
+header p{
 font-size:22px;
+max-width:700px;
+margin-bottom:40px;
 color:#d1d5db;
-animation:aparecer 3s;
 }
 
-@keyframes aparecer{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-a{
-margin-top:40px;
-padding:15px 40px;
-background:#3b82f6;
-color:white;
-text-decoration:none;
-border-radius:40px;
-transition:.4s;
-}
-
-a:hover{
-transform:scale(1.1);
+.boton{
 background:#2563eb;
+color:white;
+padding:16px 35px;
+text-decoration:none;
+border-radius:50px;
+font-size:20px;
+transition:.3s;
+}
+
+.boton:hover{
+background:#3b82f6;
+transform:scale(1.05);
 }
 
 section{
-padding:80px;
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
 }
 
 .tarjetas{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-margin-top:40px;
 }
 
 .card{
 background:#161b22;
 padding:30px;
-border-radius:20px;
-transition:.4s;
+border-radius:15px;
+transition:.3s;
+border:1px solid #30363d;
 }
 
 .card:hover{
-transform:translateY(-15px);
+transform:translateY(-10px);
+border-color:#3b82f6;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#60a5fa;
+}
+
+.card p{
+color:#c9d1d9;
+line-height:1.6;
 }
 
 footer{
-text-align:center;
 padding:30px;
-background:#161b22;
+text-align:center;
+background:#010409;
+margin-top:40px;
+color:#8b949e;
 }
-
 </style>
 
 </head>
@@ -109,11 +120,16 @@ background:#161b22;
 
 <header>
 
-<h1>Blog Digital de Andrés</h1>
+<h1>Andrés Digital</h1>
 
-<p>Mi vida, mis ideas y mi región.</p>
+<p>
+Contenido sobre tecnología, videojuegos, inteligencia artificial
+y mi camino como creador digital.
+</p>
 
-<a href="#contenido">Explorar</a>
+<a class="boton" href="#contenido">
+🚀 Explorar el contenido
+</a>
 
 </header>
 
@@ -124,18 +140,45 @@ background:#161b22;
 <div class="tarjetas">
 
 <div class="card">
-<h3>Videojuegos</h3>
-<p>Noticias, análisis y curiosidades.</p>
+<h3>🎮 Videojuegos</h3>
+<p>
+Noticias, análisis, configuraciones, FPS, Warzone y contenido gamer.
+</p>
 </div>
 
 <div class="card">
-<h3>Tecnología</h3>
-<p>Herramientas digitales e inteligencia artificial.</p>
+<h3>💻 Tecnología</h3>
+<p>
+PCs, hardware, software, inteligencia artificial y herramientas digitales.
+</p>
 </div>
 
 <div class="card">
-<h3>Paipa Boyacá</h3>
-<p>Lugares, turismo y cultura.</p>
+<h3>📍 Paipa, Boyacá</h3>
+<p>
+Turismo, lugares, emprendimientos y experiencias de mi región.
+</p>
+</div>
+
+<div class="card">
+<h3>🎥 Creación de contenido</h3>
+<p>
+Mi proceso creciendo en YouTube, TikTok y redes sociales.
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Proyectos</h3>
+<p>
+Aplicaciones, páginas web, ideas de negocio y desarrollo personal.
+</p>
+</div>
+
+<div class="card">
+<h3>🤖 Inteligencia Artificial</h3>
+<p>
+Tutoriales, herramientas y cómo aprovechar la IA para crear contenido.
+</p>
 </div>
 
 </div>
@@ -144,10 +187,5 @@ background:#161b22;
 
 <footer>
 
-© 2026 Blog Digital de Andrés
-
-</footer>
-
-</body>
-</html>
-primer diseño del blog
+© 2026 Andrés Digital | Desarrollado con GitHub Pages
+  
