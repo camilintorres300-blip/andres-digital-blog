@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Andrés Digital | Tecnología, IA y Videojuegos</title>
-
-<meta name="description" content="Blog personal de Andrés sobre tecnología, inteligencia artificial, videojuegos, emprendimiento y creación de contenido.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Andrés' Digital Blog</title>
 
 <style>
 
@@ -19,287 +12,202 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#0b1120;
-color:#ffffff;
-line-height:1.7;
-}
 
-img{
-max-width:100%;
-display:block;
-}
-
-a{
-text-decoration:none;
-color:white;
-}
-
-ul{
-list-style:none;
-}
-
-.container{
-width:min(1200px,92%);
-margin:auto;
-}
-
-/*======================
-NAVBAR
-======================*/
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(11,17,32,.90);
-backdrop-filter:blur(14px);
-border-bottom:1px solid rgba(255,255,255,.08);
-z-index:999;
-}
-
-.nav-container{
-height:75px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-}
-
-.logo{
-font-size:1.5rem;
-font-weight:800;
-color:#60a5fa;
-}
-
-.menu{
-display:flex;
-gap:30px;
-}
-
-.menu a{
-font-weight:500;
-transition:.3s;
-}
-
-.menu a:hover{
-color:#60a5fa;
-}
-
-/*======================
-HERO
-======================*/
-
-.hero{
+background:linear-gradient(135deg,#3b82f6,#60a5fa);
 
 min-height:100vh;
 
 display:flex;
+justify-content:center;
 align-items:center;
-
-background:
-linear-gradient(rgba(11,17,32,.75),rgba(11,17,32,.90)),
-linear-gradient(135deg,#0f172a,#1d4ed8,#2563eb);
-
-background-size:cover;
-
-padding-top:80px;
+padding:40px;
 
 }
 
-.hero-content{
+.container{
 
-max-width:760px;
+width:95%;
+max-width:1400px;
 
-}
-
-.hero span{
-
-display:inline-block;
-
-background:#2563eb;
-
-padding:8px 18px;
-
-border-radius:30px;
-
-font-size:.9rem;
-
-margin-bottom:20px;
-
-}
-
-.hero h1{
-
-font-size:4rem;
-
-line-height:1.1;
-
-margin-bottom:25px;
-
-}
-
-.hero p{
-
-font-size:1.15rem;
-
-color:#d1d5db;
-
-margin-bottom:40px;
-
-}
-
-.btn{
-
-display:inline-block;
-
-padding:16px 34px;
-
-border-radius:50px;
-
-background:#2563eb;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-transform:translateY(-4px);
-
-background:#3b82f6;
-
-}
-
-/*======================
-SECCIONES
-======================*/
-
-section{
-
-padding:90px 0;
-
-}
-
-.section-title{
-
-font-size:2.5rem;
-
-margin-bottom:20px;
-
-text-align:center;
-
-}
-
-.section-text{
-
-max-width:700px;
-
-margin:auto;
-
-text-align:center;
-
-color:#cbd5e1;
-
-margin-bottom:55px;
-
-}
-
-/*======================
-TARJETAS
-======================*/
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:28px;
-
-}
-
-.card{
-
-background:#111827;
-
-border:1px solid rgba(255,255,255,.08);
+background:white;
 
 border-radius:20px;
 
 padding:30px;
 
-transition:.35s;
+box-shadow:0 20px 50px rgba(0,0,0,.25);
 
 }
 
-.card:hover{
-
-transform:translateY(-8px);
-
-border-color:#3b82f6;
-
-box-shadow:0 20px 50px rgba(37,99,235,.25);
-
-}
-
-.card h3{
-
-margin-bottom:15px;
-
-font-size:1.35rem;
-
-color:#60a5fa;
-
-}
-
-.card p{
-
-color:#cbd5e1;
-
-}
-
-/*======================
-FOOTER
-======================*/
-
-footer{
-
-background:#020617;
-
-padding:35px;
+h1{
 
 text-align:center;
 
-color:#94a3b8;
+font-size:45px;
 
-border-top:1px solid rgba(255,255,255,.06);
+color:#1e3a8a;
 
-}
-
-/*======================
-RESPONSIVE
-======================*/
-
-@media(max-width:900px){
-
-.hero h1{
-
-font-size:2.8rem;
+margin-bottom:10px;
 
 }
 
-.menu{
+.subtitle{
+
+text-align:center;
+
+margin-bottom:30px;
+
+font-size:20px;
+
+color:#555;
+
+}
+
+.imageContainer{
+
+position:relative;
+
+}
+
+.imageContainer img{
+
+width:100%;
+
+border-radius:15px;
+
+display:block;
+
+}
+
+.hotspot{
+
+position:absolute;
+
+cursor:pointer;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.hotspot:hover{
+
+background:rgba(0,140,255,.25);
+
+transform:scale(1.03);
+
+}
+
+#modal{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.8);
 
 display:none;
 
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+z-index:999;
+
 }
+
+.modalBox{
+
+background:white;
+
+width:90%;
+
+max-width:900px;
+
+border-radius:20px;
+
+padding:30px;
+
+animation:zoom .3s;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+.modalBox h2{
+
+font-size:35px;
+
+color:#2563eb;
+
+margin-bottom:20px;
+
+}
+
+.modalBox p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#333;
+
+}
+
+button{
+
+margin-top:25px;
+
+padding:12px 30px;
+
+background:#2563eb;
+
+border:none;
+
+border-radius:10px;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#1d4ed8;
 
 }
 
@@ -309,276 +217,123 @@ display:none;
 
 <body>
 
-<nav>
-
-<div class="container nav-container">
-
-<div class="logo">
-Andrés Digital
-</div>
-
-<ul class="menu">
-
-<li><a href="#inicio">Inicio</a></li>
-
-<li><a href="#sobre-mi">Sobre mí</a></li>
-
-<li><a href="#blog">Blog</a></li>
-
-<li><a href="#contacto">Contacto</a></li>
-
-</ul>
-
-</div>
-
-</nav>
-
-<header class="hero" id="inicio">
-
-<div class="container hero-content">
-
-<span>🚀 Bienvenido a mi sitio web</span>
-
-<h1>Andrés Digital</h1>
-
-<p>
-Tecnología, videojuegos, inteligencia artificial y el camino para construir una marca personal desde Colombia.
-</p>
-
-<a class="btn" href="#sobre-mi">
-Conóceme
-</a>
-
-</div>
-
-</header>
-
-<section id="sobre-mi">
-
 <div class="container">
 
-<h2 class="section-title">👋 Sobre mí</h2>
+<h1>Andrés' Digital Blog</h1>
 
-<p class="section-text">
-Soy Andrés, creador de contenido de Colombia. En este sitio comparto mi proceso aprendiendo desarrollo web, inteligencia artificial, videojuegos, hardware y emprendimiento digital.
-</p>
-
-<div class="grid">
-
-<div class="card">
-<h3>🎯 Mi objetivo</h3>
-<p>
-Construir una comunidad donde cualquier persona pueda aprender tecnología de una forma sencilla y entretenida.
-</p>
+<div class="subtitle">
+Click on any section of the image.
 </div>
 
-<div class="card">
-<h3>💻 Lo que hago</h3>
-<p>
-Creo contenido sobre PCs, software, desarrollo web, animacion digital y herramientas digitales.
-</p>
-</div>
+<div class="imageContainer">
 
-<div class="card">
-<h3>🚀 Mi visión</h3>
-<p>
-Convertirme en uno de los stremers mas reconocidos en Colombia.
-</p>
-</div>
+<img src="blog.jpg">
 
-</div>
+<div class="hotspot" style="left:0%;top:0%;width:33%;height:33%;" onclick="show(1)"></div>
 
-</div>
+<div class="hotspot" style="left:33%;top:0%;width:34%;height:33%;" onclick="show(2)"></div>
 
-</section>
+<div class="hotspot" style="left:67%;top:0%;width:33%;height:33%;" onclick="show(3)"></div>
 
-<section id="blog">
+<div class="hotspot" style="left:0%;top:33%;width:33%;height:33%;" onclick="show(4)"></div>
 
-<div class="container">
+<div class="hotspot" style="left:33%;top:33%;width:34%;height:33%;" onclick="show(5)"></div>
 
-<h2 class="section-title">📝 Últimos artículos</h2>
+<div class="hotspot" style="left:67%;top:33%;width:33%;height:33%;" onclick="show(6)"></div>
 
-<p class="section-text">
-Aquí aparecerán las publicaciones más recientes del blog.
-</p>
+<div class="hotspot" style="left:0%;top:66%;width:33%;height:34%;" onclick="show(7)"></div>
 
-<div class="grid">
+<div class="hotspot" style="left:33%;top:66%;width:34%;height:34%;" onclick="show(8)"></div>
 
-<div class="card">
-<h3>⚡ Nuevo presidente en Colombia Abelardo de la Espriella</h3>
-<p>
-Sera posicionado como presidente el dia 7 de agosto el año en curso.
-</p>
-</div>
-
-<div class="card">
-<h3>🎮 La mejor configuración para Warzone</h3>
-<p>
-Optimización de FPS, AMD Adrenalin, rendimiento y configuración competitiva.
-</p>
-</div>
-
-<div class="card">
-<h3>🤖 Inteligencia Artificial para creadores</h3>
-<p>
-Herramientas que utilizo para crear contenido más rápido y mejor.
-</p>
-</div>
+<div class="hotspot" style="left:67%;top:66%;width:33%;height:34%;" onclick="show(9)"></div>
 
 </div>
 
 </div>
 
-</section>
+<div id="modal">
 
-<section>
+<div class="modalBox">
 
-<div class="container">
+<h2 id="title"></h2>
 
-<h2 class="section-title">💡 mis hobbies</h2>
+<p id="text"></p>
 
-<div class="grid">
-
-<div class="card">
-<h3>💻 Tecnología</h3>
-<p>
-Noticias, hardware, software y guías.
-</p>
-</div>
-
-<div class="card">
-<h3>🎮 Videojuegos</h3>
-<p>
-Warzone, Call of Duty, geometry dash y gaming.
-</p>
-</div>
-
-<div class="card">
-<h3>🤖 Inteligencia Artificial</h3>
-<p>
-Tutoriales y herramientas para productividad.
-</p>
-</div>
-
-<div class="card">
-<h3>🎥 Creación de contenido</h3>
-<p>
-YouTube, TikTok, OBS y edición de video.
-</p>
-</div>
-
-<div class="card">
-<h3>📈 Emprendimiento</h3>
-<p>
-Ideas de negocio y proyectos digitales.
-</p>
-</div>
-
-<div class="card">
-<h3>📍 Colombia</h3>
-<p>
-Experiencias, lugares y proyectos locales.
-</p>
-</div>
+<button onclick="closeModal()">Close</button>
 
 </div>
 
 </div>
 
-</section>
-
-<section id="contacto">
-
-<div class="container">
-
-<h2 class="section-title">📩 Contacto</h2>
-
-<p class="section-text">
-Aca encontratas mis cuentas y demas.
-</p>
-
-<div class="grid">
-
-<div class="card">
-<h3>📺 YouTube</h3>
-<p>Tramo videojuegos.</p>
-</div>
-
-<div class="card">
-<h3>🎵 TikTok</h3>
-<p>Tramo videojuegos.</p>
-</div>
-
-<div class="card">
-<h3>💻 kick</h3>
-<p>Tramo videojuegos.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Andrés Digital · Todos los derechos reservados.
-
-</footer>
 <script>
 
-const cards=document.querySelectorAll(".card");
+const info={
 
-const observer=new IntersectionObserver((entries)=>{
+1:{
+title:"Andrés' Digital Blog",
+text:"This blog is about my life, my ideas and the beautiful place where I live. Here I share my hobbies, interests, family, region and personal goals."
+},
 
-entries.forEach(entry=>{
+2:{
+title:"My Family",
+text:"My family is very important to me. They always support me and encourage me to achieve my goals. We enjoy spending time together and celebrating special occasions."
+},
 
-if(entry.isIntersecting){
+3:{
+title:"My Hobbies",
+text:"My favorite hobbies are playing video games, editing videos and drawing. These activities help me relax, improve my creativity and develop new skills."
+},
 
-entry.target.animate([
+4:{
+title:"My Interests",
+text:"I am interested in digital animation, technology, video editing, design and fitness. I enjoy learning new software and improving my English every day."
+},
 
-{opacity:0,transform:"translateY(40px)"},
+5:{
+title:"Tourist Place",
+text:"Lago Sochagota is one of the most beautiful places in Paipa, Boyacá, Colombia. Visitors can walk around the lake, ride bicycles and enjoy nature."
+},
 
-{opacity:1,transform:"translateY(0px)"}
+6:{
+title:"Current News",
+text:"Protecting the environment is everyone's responsibility. Recycling, saving water and planting trees are simple actions that help our planet."
+},
 
-],{
+7:{
+title:"Critical Thinking",
+text:"Critical thinking helps us analyze information before believing or sharing it. Media literacy allows us to identify reliable sources and make better decisions."
+},
 
-duration:700,
+8:{
+title:"Crime and Punishment",
+text:"Crime affects society and punishment seeks justice, correction and prevention. Education and opportunities help reduce crime."
+},
 
-fill:"forwards",
-
-easing:"ease"
-
-});
+9:{
+title:"Thank You",
+text:"Thank you for reading my digital blog. I hope you enjoyed learning more about me, my hobbies and my region."
+}
 
 }
 
-});
+function show(id){
 
-},{threshold:.15});
+document.getElementById("modal").style.display="flex";
 
-cards.forEach(card=>{
+document.getElementById("title").innerHTML=info[id].title;
 
-card.style.opacity=0;
+document.getElementById("text").innerHTML=info[id].text;
 
-observer.observe(card);
+}
 
-});
+function closeModal(){
 
-const sections=document.querySelectorAll("section");
+document.getElementById("modal").style.display="none";
 
-sections.forEach(section=>{
-
-section.animate([
-{opacity:0},
-{opacity:1}
-],{
-duration:1000,
-fill:"forwards"
-});
-
-});
+}
 
 </script>
+
 </body>
+
 </html>
